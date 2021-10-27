@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+.App{
+  height: 100vh;
+  background-image: linear-gradient(#00aaffb3 0%, #ff002bb3 50%, #ffffff 100%);
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.firstContainer{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 70px;
 }
 
-.App-link {
-  color: #61dafb;
+.functionalBtn{
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  height: 50px;
+  width: 350px;
+  background-color: #6cf;
+  font-size: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
+}
+.classBasedBtn{
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  height: 50px;
+  width: 350px;
+  background-color: #6cf;
+  font-size: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.secondContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.functionalComponent{
+  border: 2px solid black;
+  border-radius: 40px;
+  height: 300px;
+  width: 400px;
+  text-align: center;
+  background-color: cyan;
+}
+
+.classBased{
+  border: 2px solid black;
+  border-radius: 40px;
+  height: 300px;
+  width: 400px;
+  text-align: center;
+  background-color:darkviolet;
+}
+
+
+.header{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  text-shadow: 3px 3px 0px #0ff;
+}
+
+.functionalExternalCss{
+  color: darkred;
+}
+
+.classBasedExternalCss{
+  color:blue;
+}
+
+
+@media screen and (min-width:240px) and (max-width:500px){
+
+  .functionalBtn{
+    height: 50px;
+    width: 300px;
   }
-  to {
-    transform: rotate(360deg);
+  .classBasedBtn{
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
   }
+
+  .firstContainer{
+    flex-direction: column;
+  }
+  .secondContainer{
+    flex-direction: column;
+  }
+
+  .functionalComponent{
+    height: 200px;
+    width: 300px;
+  }
+
+  .classBased{
+    height: 200px;
+    width: 300px;
+    margin-top: 20px;
+  }
+
 }
